@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
+    <pages>
+        <page name='seccion-clausuras y concurrencia'/>
+        <page name='Clausuras'/>
+        <page name='Sin clausuras'/>
+        <page name='con clausuras'/>
+        <page name='acortando'/>
+    </pages>
+</playground>
