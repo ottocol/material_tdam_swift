@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
-        <page name='seccion-clausuras y concurrencia'/>
+        <page name='1. Clausuras y concurrencia'/>
         <page name='Clausuras'/>
         <page name='Sin clausuras'/>
         <page name='con clausuras'/>
         <page name='acortando'/>
+        <page name='acortando más'/>
+        <page name='Captura de variables'/>
+        <page name='bloques y concurrencia'/>
+        <page name='colas de operaciones'/>
+        <page name='cola principal'/>
+        <page name='2. Protocolos'/>
+        <page name='que es un protocolo'/>
+        <page name='definir y usar protocolo'/>
+        <page name='superclase y protocolos'/>
+        <page name='patron delegacion'/>
+        <page name='como usar delegacion'/>
     </pages>
 </playground>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='variables y constantes'/>
+        <page name='inferencia de tipos'/>
+        <page name='Conversión de tipos'/>
+        <page name='expresiones en cadena'/>
+        <page name='arrays y diccionarios'/>
+        <page name='mas sobre arrays y diccionarios'/>
+        <page name='control de flujo'/>
+        <page name='switch'/>
+        <page name='for-in en diccionarios'/>
+        <page name='while'/>
+        <page name='rangos'/>
+        <page name='Funciones'/>
+        <page name='opcionales'/>
+        <page name='opcionales II'/>
+        <page name='trabajar con opcionales'/>
+        <page name='desenvolver opcionales'/>
+        <page name='implicitly unwrapped optionals'/>
+        <page name='tuplas'/>
+        <page name='continuara'/>
+    </pages>
+</playground>
