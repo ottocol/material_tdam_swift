@@ -1,3 +1,4 @@
+//:[⬅️](@previous) [➡️](@next)
 //: ## Clases y `structs`
 //: En lenguajes como C++, clases y `structs` son completamente diferentes. En swift se parecen mucho:
 //: - Ambas pueden contener **propiedades** y **métodos**

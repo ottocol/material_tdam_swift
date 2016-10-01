@@ -1,4 +1,5 @@
-//: # Propiedades calculadas
+//:[⬅️](@previous) [➡️](@next)
+//: ## Propiedades calculadas
 //: Desde fuera parecen valores almacenados, pero se calculan "sobre la marcha"
 class Figura {
     var numeroDeLados = 0

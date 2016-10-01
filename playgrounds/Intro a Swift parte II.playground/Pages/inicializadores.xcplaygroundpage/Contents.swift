@@ -1,4 +1,5 @@
-//: # Inicializadores
+//:[⬅️](@previous) [➡️](@next)
+//: ## Inicializadores
 //: Se definen con `init` y no devuelven nada
 class Figura {
     var numeroDeLados = 0

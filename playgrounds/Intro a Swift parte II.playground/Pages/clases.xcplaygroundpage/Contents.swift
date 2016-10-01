@@ -1,3 +1,4 @@
+//:[⬅️](@previous) [➡️](@next)
 //: ## Clases
 class Figura {
     var numeroDeLados = 0

@@ -1,3 +1,4 @@
+//:[⬅️](@previous) [➡️](@next)
 //: ## Creación y uso simple de `structs`
 enum Palo {
     case bastos, copas, espadas, oros

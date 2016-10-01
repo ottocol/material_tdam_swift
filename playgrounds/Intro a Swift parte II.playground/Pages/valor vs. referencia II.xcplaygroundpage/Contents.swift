@@ -1,4 +1,5 @@
-//: # Por valor vs. por referencia
+//:[⬅️](@previous) [➡️](@next)
+//: ## Por valor vs. por referencia
 //: Las estructuras se pasan y asignan **por valor** (se hace una copia). Las clases **por referencia** (son punteros)
 
 enum Palo {

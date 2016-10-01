@@ -1,4 +1,5 @@
-//: # Herencia
+//:[⬅️](@previous) [➡️](@next)
+//: ## Herencia
 class Vehiculo {
     var velocidad = 0
     func descripcion()->String {
