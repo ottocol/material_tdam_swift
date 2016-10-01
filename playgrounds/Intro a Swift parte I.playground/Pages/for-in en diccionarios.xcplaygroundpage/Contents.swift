@@ -1,3 +1,4 @@
+//:[⬅️](@previous) [➡️](@next)
 //: ## Iterar por un diccionario con for-in
 let numerosInteresantes = [
     "Primos": [2, 3, 5, 7, 11, 13],

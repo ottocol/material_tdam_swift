@@ -1,3 +1,4 @@
+//:[⬅️](@previous) [➡️](@next)
 //:# Más sobre arrays y diccionarios
 //Inicialización vacía
 var listaCompra = [String]()

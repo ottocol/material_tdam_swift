@@ -1,3 +1,4 @@
+//:[⬅️](@previous) [➡️](@next)
 //:## Funciones
 //:- Definidas con `func`
 //:- El tipo de retorno se precede de `->`

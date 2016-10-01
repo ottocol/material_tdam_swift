@@ -1,3 +1,4 @@
+//:[⬅️](@previous) [➡️](@next)
 //: ## Rangos
 //: Dos tipos: cerrados y semi-abiertos
 var primerBucleFor = 0

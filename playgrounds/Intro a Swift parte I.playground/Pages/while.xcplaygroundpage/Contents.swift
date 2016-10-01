@@ -1,4 +1,5 @@
-//: `while` y `repeat..while`
+//:[⬅️](@previous) [➡️](@next)
+//: ## `while` y `repeat..while`
 var n = 2
 while n < 2 {
     n = n * 2

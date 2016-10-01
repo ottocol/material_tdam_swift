@@ -1,3 +1,4 @@
+//:[⬅️](@previous) [➡️](@next)
 //: ## Tuplas
 //: Agrupan varios valores en uno único, compuesto
 let error404 = (404, "Not found")

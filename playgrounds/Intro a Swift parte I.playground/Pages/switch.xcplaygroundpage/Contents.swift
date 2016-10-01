@@ -1,4 +1,5 @@
-//: `switch`
+//:[⬅️](@previous) [➡️](@next)
+//: ## `switch`
 //: Permite cualquier tipo de datos y una amplia variedad de operaciones de comparación; no está limitada a enteros y pruebas de igualdad
 let verdura = "pimiento rojo"
 switch verdura {
