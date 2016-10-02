@@ -103,5 +103,89 @@ self.respuestaLabel.text = self.miAdivino.obtenerRespuesta()
 
 ## Ejercicio 3. Ampliación de `UAdivino`
 
+### Parte 1: Añadirle un nombre al adivino
 
+Vamos a hacer que el adivino tenga un nombre, que aparecerá en pantalla. Además del "Formula una pregunta en voz alta..." antes aparecerá un "Hola, soy XXX". Haz que este texto aparezca en un `label` distinto al de "Formula una pregunta..." 
 
+> Sí, se podría incluir el nombre del adivino en el "formula una pregunta...", pero la idea es que así practiquéis añadiendo algo nuevo a la interfaz y luego accediendo a ello con un nuevo `outlet`
+
+Tendrás que hacer las siguientes modificaciones/añadidos:
+
+En el código de `UAdivino`
+
+- Añadir la nueva propiedad `nombre`
+- Definir un inicializador que acepte un nombre como parámetro y le dé su  valor a la propiedad
+
+En el *storyboard*
+
+- Crear una nueva `label` en el *storyboard* para el nuevo mensaje
+- Crear un nuevo `outlet` entre el *storyboard* y el `ViewController`, para representar en código Swift a la nueva `label`. Recuerda que se hace en el *assistant editor* con `Ctrl+arrastrar` entre la `label` y el código fuente
+
+En el `ViewController`
+
+- Sustituye la inicialización de `miAdivino` por una nueva, que le pase el nombre (que estará fijo en el código fuente)
+
+```swift
+var miAdivino = UAdivino(nombre: "Rappel")  //O como se llame el vuestro...
+```
+
+- En el método `viewDidLoad()`  escribe código Swift que actualice el nuevo `label` con el mensaje "Hola soy" y el nombre del adivino.
+
+Una vez compruebes que la aplicación funciona **haz un nuevo commit y pon como comentario "Ejercicio 1.3.1"** (o sea, sesión 1, ejercicio 3, apartado 1).
+
+## Parte 2: Distinguir entre respuestas positivas/negativas
+
+Queremos que además de la respuesta en modo texto aparezca una imagen u otra indicando el carácter positivo/negativo de la respuesta.
+
+![](img_1_y_2/UAdivino_con_imagen.png)
+
+Al ser la respuesta  solo un texto en lenguaje natural, de ahí no es sencillo deducir automáticamente si significa "Sí" o "No". Por tanto para cada respuesta además del texto almacenaremos un booleano indicando el tipo.
+
+Tendrás que hacer las siguientes modificaciones:
+
+En el proyecto Xcode tenemos que añadir las imágenes:
+
+- Haz clic en la "carpeta" `Assets.xcassets` del proyecto.
+- Arrastra las imágenes a la lista que aparece a la izquierda (por ahora vacía, solo aparece un `appIcon`)
+- A cada imagen le puedes dar un nombre simbólico para poder referenciarlas en tu código Swift. Llámalas "si" y "no".
+
+En el *storyboard*:
+
+- Inserta un elemento de interfaz de usuario de tipo `Image View`
+- Crea un *outlet* que  conecte este `image view` con una propiedad que llamarás `imagen` en el código fuente de `ViewController` (recuerda que es en el *assistant editor* y con `Ctrl+arrastrar`)
+
+En el archivo `UAdivino.swift`
+
+- Define un `struct` llamado Respuesta para almacenar el texto y el tipo de respuesta
+
+```swift
+struct Respuesta {
+    var texto: String
+    var tipo: Bool
+}
+```
+
+- En la clase `UAdivino`, cambia la definición de la propiedad `respuestas`, ahora será un array de *structs* `Respuesta`
+
+```swift
+let respuestas = [
+  Respuesta(texto: "Si", tipo: true),
+  Respuesta(texto: "No", tipo: false),
+  Respuesta(texto: "Ni de coña", tipo: false),
+  Respuesta(texto: "¡Claro que sí!", tipo: false)
+]
+```
+
+- cambia la declaración y el código de la función `obtenerRespuesta`. Ahora debe devolver un `Respuesta`, no un `String`
+
+En el ViewController
+
+- En el método `botonPulsado`, que responde a la pulsación sobre el botón "Obtener Respuesta", cambia el código, modificándolo como necesites. Recuerda que ahora `obtenerRespuesta` devuelve una instancia de `Respuesta` y no un String. Para cargar la imagen puedes usar un inicializador de `UIImage` que carga una imagen por nombre:
+
+```swift
+//suponiendo que el outlet se llama "imagen", como decíamos antes
+//La propiedad "image" del objeto UIImage es la imagen en sí
+self.imagen.image = UIImage(named:"si")
+```
+
+Evidentemente en caso de que el `tipo` de la respuesta sea `true` debes cargar la imagen llamada "si" pero en caso contrario debes cargar la "no"
