@@ -1,3 +1,3 @@
 //: # Introducción a Swift
-//: # Tipos de datos. La visión "imperativa"
+//: # Tipos de datos. Control de flujo
 //: [➡️](@next)

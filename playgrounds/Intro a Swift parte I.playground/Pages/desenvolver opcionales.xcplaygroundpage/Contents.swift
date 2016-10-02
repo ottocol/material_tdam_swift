@@ -1,5 +1,5 @@
 //:[⬅️](@previous) [➡️](@next)
-//: Desenvolver un _optional_
+//: ## Desenvolver un _optional_
 //: - En un opcional el valor está _envuelto_ (_wrapped_). No lo podemos usar directamente.
 let numeroConvertido = Int("123")
 numeroConvertido + 100

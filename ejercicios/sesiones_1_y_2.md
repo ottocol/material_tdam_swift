@@ -16,6 +16,7 @@ Necesitamos alguna clase donde poder colocar nuestro código. Vamos a hacerlo en
 
 En la clase `ViewController` añadimos un nuevo método para obtener una respuesta al azar generada por el adivino:
 
+
 ```swift
 func obtenerRespuesta() -> String {
     let respuestas = ["Si", "No", "Ni de coña", "Por supuesto!"]
@@ -23,6 +24,7 @@ func obtenerRespuesta() -> String {
     return respuestas[indice]
 }
 ```
+
 
 > Para comprobar que funciona, ve dentro del mismo archivo al método `viewDidLoad()`. Este método se ejecuta cuando se carga la vista asociada al controlador. Escribe allí un bucle que llame a `obtenerRespuesta()` 10 veces y vaya imprimiendo con `print` los valores obtenidos. Así comprobarás si parecen más o menos aleatorios y se corresponden con las respuestas predefinidas.
 
@@ -139,15 +141,15 @@ Queremos que además de la respuesta en modo texto aparezca una imagen u otra in
 
 ![](img_1_y_2/UAdivino_con_imagen.png)
 
-Al ser la respuesta  solo un texto en lenguaje natural, de ahí no es sencillo deducir automáticamente si significa "Sí" o "No". Por tanto para cada respuesta además del texto almacenaremos un booleano indicando el tipo.
+Al ser la respuesta  solo un texto en lenguaje natural de ella no es fácil deducir automáticamente si significa "Sí" o "No". Por tanto para cada respuesta además del texto almacenaremos un booleano indicando el tipo.
 
 Tendrás que hacer las siguientes modificaciones:
 
 En el proyecto Xcode tenemos que añadir las imágenes:
 
 - Haz clic en la "carpeta" `Assets.xcassets` del proyecto.
-- Arrastra las imágenes a la lista que aparece a la izquierda (por ahora vacía, solo aparece un `appIcon`)
-- A cada imagen le puedes dar un nombre simbólico para poder referenciarlas en tu código Swift. Llámalas "si" y "no".
+- Arrastra las imágenes para el [sí](img_1_y_2/si.png) y para el [no](img_1_y_2/no.png) a la lista que aparece a la izquierda (por ahora vacía, solo aparece un `appIcon`)
+- Cada imagen tiene un nombre simbólico para poder referenciarlas en el código Swift. Por defecto este nombre es el del archivo de la imagen, sin la extensión.
 
 En el *storyboard*:
 
@@ -172,11 +174,11 @@ let respuestas = [
   Respuesta(texto: "Si", tipo: true),
   Respuesta(texto: "No", tipo: false),
   Respuesta(texto: "Ni de coña", tipo: false),
-  Respuesta(texto: "¡Claro que sí!", tipo: false)
+  Respuesta(texto: "¡Claro que sí!", tipo: true)
 ]
 ```
 
-- cambia la declaración y el código de la función `obtenerRespuesta`. Ahora debe devolver un `Respuesta`, no un `String`
+- Cambia la declaración y el código de la función `obtenerRespuesta`. Ahora debe devolver un `Respuesta`, no un `String`
 
 En el ViewController
 

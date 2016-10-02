@@ -1,5 +1,5 @@
 //:[⬅️](@previous) [➡️](@next)
-//: Trabajar con valores opcionales
+//: ## Trabajar con valores opcionales
 //:- Los opcionales proporcionan una forma de devolver valores en métodos que deben tratar entradas con posibles errores
 
 let numeroConvertido = Int("123")
