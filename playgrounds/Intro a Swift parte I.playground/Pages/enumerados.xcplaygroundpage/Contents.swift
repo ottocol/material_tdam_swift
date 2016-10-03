@@ -1,10 +1,14 @@
 //:[⬅️](@previous) [➡️](@next)
 //: ## Enumerados
 enum Direccion {
-    case norte,sur,este,oeste
+    case norte
+    case sur
+    case este
+    case oeste
 }
 
 var dir = Direccion.norte
+dir = .sur
 //una vez está claro que una variable tiene un tipo
 //podemos poner solo el valor precedido de un "."
 var otraDir : Direccion = .sur

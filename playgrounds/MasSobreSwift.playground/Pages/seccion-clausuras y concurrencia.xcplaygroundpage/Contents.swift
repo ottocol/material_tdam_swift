@@ -1,2 +1,0 @@
-//: # Clausuras y concurrencia
-

@@ -6,7 +6,7 @@
 func saluda(nombre: String, dia: String) -> String {
     return "Hola \(nombre), hoy es \(dia)"
 }
-saluda(nombre:"Bob", dia: "martes")
+print(saluda(nombre:"Bob", dia: "martes"))
 //:
 //: - Podemos definir nombres externos distintos de los internos
 //: - Podemos poner parámetros sin nombre, con `_`
