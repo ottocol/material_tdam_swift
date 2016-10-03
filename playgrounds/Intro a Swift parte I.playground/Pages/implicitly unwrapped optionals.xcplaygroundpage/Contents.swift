@@ -4,4 +4,4 @@
 var num: Int!
 num = Int("100")
 let num2 = num + 200
-//: - Por ejemplo, cuando declaramos una variable que todavía no podemos inicializar pero estamos seguros que cuando la necesitemos usar alguien ya la habrá inicializado
+//: - Útil por ejemplo cuando declaramos una variable que todavía no podemos inicializar, pero estamos seguros que cuando la usemos ya estará  inicializada

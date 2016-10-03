@@ -1,5 +1,5 @@
 //:[⬅️](@previous) [➡️](@next)
-//:## Arrays y diccionarios
+//: ## Arrays y diccionarios
 var listaCompra = ["huevos", "agua", "pan"]
 listaCompra.append("whisky")
 listaCompra[1] = "botella de agua"

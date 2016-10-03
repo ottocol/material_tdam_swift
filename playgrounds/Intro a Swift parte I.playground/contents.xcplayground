@@ -2,6 +2,8 @@
 <playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
         <page name='titulo'/>
+        <page name='historia'/>
+        <page name='recursos'/>
         <page name='variables y constantes'/>
         <page name='inferencia de tipos'/>
         <page name='Conversión de tipos'/>
@@ -19,7 +21,9 @@
         <page name='trabajar con opcionales'/>
         <page name='desenvolver opcionales'/>
         <page name='implicitly unwrapped optionals'/>
+        <page name='optional chaining'/>
         <page name='tuplas'/>
+        <page name='enumerados'/>
         <page name='continuara'/>
     </pages>
 </playground>
