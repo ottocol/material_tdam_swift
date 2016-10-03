@@ -1,58 +1,464 @@
-<!DOCTYPE html>  
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>sesiones_1_y_2</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style id="mkstylesheet">
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{box-sizing:border-box}input,select,textarea,button{font:13px/1.4 Helvetica,arial,nimbussansl,liberationsans,freesans,clean,sans-serif,"Segoe UI Emoji","Segoe UI Symbol"}body{font:13px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";color:#333;background-color:#fff}a{color:#4078c0;text-decoration:none}a:hover,a:active{text-decoration:underline}hr,.rule{height:0;margin:15px 0;overflow:hidden;background:transparent;border:0;border-bottom:1px solid #ddd}hr:before,.rule:before{display:table;content:""}hr:after,.rule:after{display:table;clear:both;content:""}h1,h2,h3,h4,h5,h6{margin-top:15px;margin-bottom:15px;line-height:1.1}h1{font-size:30px}h2{font-size:21px}h3{font-size:16px}h4{font-size:14px}h5{font-size:12px}h6{font-size:11px}small{font-size:90%}blockquote{margin:0}ul,ol{padding:0;margin-top:0;margin-bottom:0}ol ol,ul ol{list-style-type:lower-roman}ul ul ol,ul ol ol,ol ul ol,ol ol ol{list-style-type:lower-alpha}dd{margin-left:0}tt,code{font-family:Consolas, "Liberation Mono", Menlo, Courier, monospace;font-size:12px}pre{margin-top:0;margin-bottom:0;font:12px Consolas,"Liberation Mono",Menlo,Courier,monospace}html,body{color:black}#wrapper{font:16px helvetica,arial,freesans,clean,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6;padding:3px;background:#fff;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;border:solid 1px #dddddd !important;color:#333}p{margin:1em 0}a{color:#4183c4;text-decoration:none}#wrapper{background-color:#fff;padding:30px;margin:15px;font-size:16px;line-height:1.6}#wrapper>*:first-child{margin-top:0 !important}#wrapper>*:last-child{margin-bottom:0 !important}@media screen{#wrapper{border:solid 1px #ddd}}h1,h2,h3,h4,h5,h6{position:relative;margin-top:1em;margin-bottom:16px;font-weight:700;line-height:1.4;color:#333}h1{padding-bottom:.3em;font-size:2.25em;line-height:1.2;border-bottom:1px solid #eee}h2{padding-bottom:0.3em;font-size:1.75em;line-height:1.225;border-bottom:1px solid #eee}h3{font-size:1.5em;line-height:1.43}h4{font-size:1.25em}h5{font-size:1em}h6{color:#777;font-size:1em}p,blockquote,ul,ol,dl,table,pre{margin-top:0;margin-bottom:16px}hr{height:4px;padding:0;margin:16px 0;background-color:#e7e7e7;border:0 none}ul,ol{padding-left:2em}ul.no-list,ol.no-list{padding:0;list-style-type:none}ul ul,ul ol{margin-top:0;margin-bottom:0}ol ol,ol ul{margin-top:0;margin-bottom:0}li>p{margin-top:16px}dl{padding:0}dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}dl dd{padding:0 16px;margin-bottom:16px}blockquote{padding:0 15px;margin-left:0;color:#777;border-left:4px solid #ddd}blockquote>:first-child{margin-top:0}blockquote>:last-child{margin-bottom:0}table{display:block;width:100%;overflow:auto}table th{font-weight:700;padding:6px 13px;border:1px solid #ddd}table td{padding:6px 13px;border:1px solid #ddd}table tr{background-color:#fff;border-top:1px solid #ccc}table tr:nth-child(2n){background-color:#f8f8f8}img{max-width:100%;-moz-box-sizing:border-box;box-sizing:border-box}span.frame{display:block;overflow:hidden}span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}span.frame span img{display:block;float:left}span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}span.align-center{display:block;overflow:hidden;clear:both}span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}span.align-center span img{margin:0 auto;text-align:center}span.align-right{display:block;overflow:hidden;clear:both}span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}span.align-right span img{margin:0;text-align:right}span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}span.float-left span{margin:13px 0 0}span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}code,tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,0.04);border-radius:3px}code:before,code:after{letter-spacing:-.2em;content:"\00a0"}tt:before,tt:after{letter-spacing:-.2em;content:"\00a0"}code br,tt br{display:none}del code{text-decoration:inherit;vertical-align:text-top}pre>code{padding:0;margin:0;font-size:100%;white-space:pre;background:transparent;border:0}.highlight{margin-bottom:16px}.highlight pre{padding:16px;margin-bottom:0;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}pre{padding:16px;margin-bottom:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px;word-wrap:normal}pre code,pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}pre code:before,pre code:after{content:normal}pre tt:before,pre tt:after{content:normal}.poetry pre{font-family:Georgia, Garamond, serif !important;font-style:italic;font-size:110% !important;line-height:1.6em;display:block;margin-left:1em}.poetry pre code{font-family:Georgia, Garamond, serif !important;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;white-space:pre-wrap}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;vertical-align:super;position:relative}sub{vertical-align:sub;top:-1px}@media print{body{background:#fff}img,table,figure{page-break-inside:avoid}#wrapper{background:#fff;border:none !important;font-size:12px}pre code{overflow:visible}}@media screen{body.inverted{color:#eee !important;border-color:#555;box-shadow:none}.inverted #wrapper,.inverted hr,.inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted th,.inverted .math,.inverted caption,.inverted dd,.inverted dt,.inverted blockquote{color:#eee !important;border-color:#555;box-shadow:none}.inverted td,.inverted th{background:#333}.inverted pre,.inverted code,.inverted tt{background:#eeeeee !important;color:#111}.inverted h2{border-color:#555555}.inverted hr{border-color:#777;border-width:1px !important}::selection{background:rgba(157,193,200,0.5)}h1::selection{background-color:rgba(45,156,208,0.3)}h2::selection{background-color:rgba(90,182,224,0.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,0.3)}code::selection{background-color:rgba(0,0,0,0.7);color:#eeeeee}code span::selection{background-color:rgba(0,0,0,0.7) !important;color:#eeeeee !important}a::selection{background-color:rgba(255,230,102,0.2)}.inverted a::selection{background-color:rgba(255,230,102,0.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,0.5)}.inverted{background:#0b2531;background:#252a2a}.inverted #wrapper{background:#252a2a}.inverted a{color:#acd1d5}}.highlight{background:#fff}.highlight .c{color:#998;font-style:italic}.highlight .err{color:#a61717;background-color:#e3d2d2}.highlight .k,.highlight .o{font-weight:700}.highlight .cm{color:#998;font-style:italic}.highlight .cp{color:#999;font-weight:700}.highlight .c1{color:#998;font-style:italic}.highlight .cs{color:#999;font-weight:700;font-style:italic}.highlight .gd{color:#000;background-color:#fdd}.highlight .gd .x{color:#000;background-color:#faa}.highlight .ge{font-style:italic}.highlight .gr{color:#a00}.highlight .gh{color:#999}.highlight .gi{color:#000;background-color:#dfd}.highlight .gi .x{color:#000;background-color:#afa}.highlight .go{color:#888}.highlight .gp{color:#555}.highlight .gs{font-weight:700}.highlight .gu{color:purple;font-weight:700}.highlight .gt{color:#a00}.highlight .kc,.highlight .kd,.highlight .kn,.highlight .kp,.highlight .kr{font-weight:700}.highlight .kt{color:#458;font-weight:700}.highlight .m{color:#099}.highlight .s{color:#d14}.highlight .n{color:#333}.highlight .na{color:teal}.highlight .nb{color:#0086b3}.highlight .nc{color:#458;font-weight:700}.highlight .no{color:teal}.highlight .ni{color:purple}.highlight .ne,.highlight .nf{color:#900;font-weight:700}.highlight .nn{color:#555}.highlight .nt{color:navy}.highlight .nv{color:teal}.highlight .ow{font-weight:700}.highlight .w{color:#bbb}.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo{color:#099}.highlight .sb,.highlight .sc,.highlight .sd,.highlight .s2,.highlight .se,.highlight .sh,.highlight .si,.highlight .sx{color:#d14}.highlight .sr{color:#009926}.highlight .s1{color:#d14}.highlight .ss{color:#990073}.highlight .bp{color:#999}.highlight .vc,.highlight .vg,.highlight .vi{color:teal}.highlight .il{color:#099}.highlight .gc{color:#999;background-color:#EAF2F5}.type-csharp .highlight .k,.type-csharp .highlight .kt{color:blue}.type-csharp .highlight .nf{color:#000;font-weight:400}.type-csharp .highlight .nc{color:#2b91af}.type-csharp .highlight .nn{color:#000}.type-csharp .highlight .s,.type-csharp .highlight .sc{color:#a31515}.type-csharp .highlight .k,.type-csharp .highlight .kt{color:#00F}.type-csharp .highlight .nf{color:#000;font-weight:normal}.type-csharp .highlight .nc{color:#2B91AF}.type-csharp .highlight .nn{color:#000}.type-csharp .highlight .s,.type-csharp .highlight .sc{color:#A31515}body.dark #wrapper{background:transparent !important;box-shadow:none !important}
-#mkreplaced-toc{list-style-position:inside;padding:0;margin:0 0 0 1rem;list-style-type:none}#mkreplaced-toc li::before{content:''}#mkreplaced-toc li{font-size:1.5rem;line-height:1.5;font-weight:normal}#mkreplaced-toc li ul{font-size:1.3rem;font-weight:300;padding:.5rem 0;margin:0 0 0 1rem}#mkreplaced-toc li.missing{list-style-type:none !important}#mkreplaced-toc.max-1 ul,#mkreplaced-toc.max1 ul{display:none}#mkreplaced-toc.max-2 ul ul,#mkreplaced-toc.max2 ul ul{display:none}#mkreplaced-toc.max-3 ul ul ul,#mkreplaced-toc.max3 ul ul ul{display:none}#mkreplaced-toc.max-4 ul ul ul ul,#mkreplaced-toc.max4 ul ul ul ul{display:none}#mkreplaced-toc.max-5 ul ul ul ul ul,#mkreplaced-toc.max5 ul ul ul ul ul{display:none}.rtl{direction:rtl;text-align:right}@media print{body{background:white;line-height:1.4}html,body,#wrapper{max-width:100%;width:100%;-webkit-text-size-adjust:none;-webkit-perspective:none !important;box-sizing:border-box;width:auto;border:0;margin:0;padding:0;float:none;-moz-box-shadow:none !important;-webkit-box-shadow:none !important;box-shadow:none !important}mark{background:transparent !important}h1,h2,h3,h4,h5,h6{page-break-after:avoid}p,h2,h3{orphans:3;widows:3}section{page-break-before:avoid}pre>code{white-space:pre-line;word-break:break-word}#generated-toc,#firstdiff,#toc-title,#mkdocumentprogress,#mkincludechart,#mkprogressbar1,#mkprogressbar2,.mkscrollmeter,#alllinks,.popup{display:none !important}.suppressprintlinks a{color:inherit !important;text-decoration:none !important;border-bottom:none !important;cursor:default !important}.hrefafterlinktext #wrapper a:link:after,.hrefafterlinktext #wrapper a:visited:after{content:" (" attr(href) ") ";font-size:90%;opacity:0.9}.nocodebreak pre{page-break-inside:avoid}img,table,figure{page-break-inside:avoid}.breakfootnotes .footnotes{page-break-before:always}.breakfootnotes .footnotes hr{display:none}#mktoctitle{display:block}#print-title{display:block;border-bottom:solid 1px #666}#wrapper pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc{display:block}.task-list .task-list-item{list-style-type:none !important}.task-list .gh-complete.task-list-item .task-list-item-checkbox:before{content:'\2713';background:#838387}.task-list .task-list-item-checkbox{-webkit-appearance:none;position:relative}.task-list .task-list-item-checkbox:before{content:' ';border:solid 1px #aaa;width:1em;height:1em;display:block;border-radius:2px;left:-20px;top:-.75em;color:white;font-weight:bold;line-height:1;text-align:center;position:absolute}}
-#wrapper #generated-toc-clone, #wrapper #mkreplaced-toc, #wrapper #generated-toc-clone ul, #wrapper #mkreplaced-toc ul {
-    list-style-position: inside;
+
+<meta charset="utf-8">
+<title>sesiones_1_y_2</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
 }
-#wrapper #generated-toc-clone li.missing, #wrapper #mkreplaced-toc li.missing {
-    list-style-type: none!important;
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
 }
-#wrapper #generated-toc-clone, #wrapper #mkreplaced-toc {
-    list-style-type: upper-roman;
+* {
+	-webkit-print-color-adjust: exact;
 }
-#wrapper #generated-toc-clone>li>ul, #wrapper #mkreplaced-toc>li>ul  {
-    list-style-type: decimal;
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
 }
-#wrapper #generated-toc-clone>li>ul>li>ul, #wrapper #mkreplaced-toc>li>ul>li>ul {
-    list-style-type: none;
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
 }
-#wrapper #generated-toc-clone>li>ul>li>ul>li>ul, #wrapper #mkreplaced-toc>li>ul>li>ul>li>ul {
-    list-style-type: none;
-}
-#wrapper #generated-toc-clone>li>ul>li>ul>li>ul>li>ul, #wrapper #mkreplaced-toc>li>ul>li>ul>li>ul>li>ul {
-    list-style-type: disc;
-}
-#wrapper #generated-toc-clone>li>ul>li>ul>li>ul>li>ul>li>ul, #wrapper #mkreplaced-toc>li>ul>li>ul>li>ul>li>ul>li>ul {
-    list-style-type: square;
-}
-#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc{list-style-position:outside!important;margin-left:2rem;}
 </style>
 
-<style id="mkprintstyles">@media print{h2{page-break-before:always;}
-html,body,#wrapper{font-size:10pt!important;}
+<style type="text/css">
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
 }
 </style>
 
-<style>#wrapper { max-width:900px; margin:0 auto }</style>
+
 </head>
-<body class="normal">
-  <div id="wrapper">
-      <h1 id="ejerciciosdelassesiones1y2.">Ejercicios de las sesiones 1 y 2.</h1>
 
-<h1 id="introducciónaldesarrolloiosconswift">Introducción al desarrollo iOS con Swift</h1>
+<body>
 
-<p>Vamos a implementar una pequeña aplicación que funciona de forma similar a la típica &#8220;bola 8&#8221;. Formulamos una pregunta en voz alta, y nuestro &#8220;adivino&#8221;, al pulsar un botón nos dará una respuesta positiva o negativa. Algo como la siguiente imagen</p>
+<h1 id="toc_0">Ejercicios de las sesiones 1 y 2.</h1>
 
-<figure>
-<img src="img_1_y_2/UAdivino.png" alt="" />
-</figure>
+<h1 id="toc_1">Introducción al desarrollo iOS con Swift</h1>
+
+<p>Vamos a implementar una pequeña aplicación que funciona de forma similar a la típica &quot;bola 8&quot;. Formulamos una pregunta en voz alta, y nuestro &quot;adivino&quot;, al pulsar un botón nos dará una respuesta positiva o negativa. Algo como la siguiente imagen</p>
+
+<p><img src="img_1_y_2/UAdivino.png" alt=""></p>
 
 <p>Vamos a hacer un par de versiones según vayamos viendo características de Swift, y luego ampliaremos la aplicación.</p>
 
@@ -60,16 +466,17 @@ html,body,#wrapper{font-size:10pt!important;}
 <p>Las dos primeras versiones de la aplicación serán desarrolladas de forma guiada, se dejará el código en la web por si lo necesitáis. A partir de ahí tendréis que añadir una nueva funcionalidad e internacionalizar la aplicación.</p>
 </blockquote>
 
-<h2 id="ejercicio1.aplicaciónuadivinoconswiftsinorientaciónaobjetos">Ejercicio 1. Aplicación <code>UAdivino</code> con Swift sin orientación a objetos</h2>
+<h2 id="toc_2">Ejercicio 1. Aplicación <code>UAdivino</code> con Swift sin orientación a objetos (0.75 puntos)</h2>
 
 <p>Necesitamos alguna clase donde poder colocar nuestro código. Vamos a hacerlo en el <code>ViewController</code>, que en el MVC de iOS es el <strong>controlador</strong>*, el pegamento entre vista y modelo.</p>
 
 <p>En la clase <code>ViewController</code> añadimos un nuevo método para obtener una respuesta al azar generada por el adivino:</p>
-<pre><code class="swift">func obtenerRespuesta() -&gt; String {
+
+<div><pre><code class="language-swift">func obtenerRespuesta() -&gt; String {
     let respuestas = [&quot;Si&quot;, &quot;No&quot;, &quot;Ni de coña&quot;, &quot;Por supuesto!&quot;]
     let indice = Int(arc4random_uniform(UInt32(respuestas.count)))
     return respuestas[indice]
-}</code></pre>
+}</code></pre></div>
 
 <blockquote>
 <p>Para comprobar que funciona, ve dentro del mismo archivo al método <code>viewDidLoad()</code>. Este método se ejecuta cuando se carga la vista asociada al controlador. Escribe allí un bucle que llame a <code>obtenerRespuesta()</code> 10 veces y vaya imprimiendo con <code>print</code> los valores obtenidos. Así comprobarás si parecen más o menos aleatorios y se corresponden con las respuestas predefinidas.</p>
@@ -77,11 +484,11 @@ html,body,#wrapper{font-size:10pt!important;}
 
 <p>Lo que hemos escrito antes sería nuestro <strong>modelo</strong>, la lógica de nuestra aplicación. Aunque en este caso es muy sencilla y el modelo un tanto pobre ya que hemos insertado directamente el código en el controlador en lugar de tener un modelo orientado a objetos.</p>
 
-<p>De las tres piezas de MVC nos falta por tanto la <strong>vista</strong>. Para ello abriremos el archivo <code>Main.storyboard</code> haciendo clic sobre él. Aparecerá una pantalla en blanco de iPhone. Aquí debemos añadir los componentes gráficos de nuestra aplicación. En la esquina inferior derecha de Xcode podemos seleccionar el componente que necesitemos y &#8220;arrastrarlo&#8221; hasta la pantalla del <em>storyboard</em>. Podemos filtrar la lista de componentes escribiendo en el cuadro de texto de su parte inferior. Necesitamos:</p>
+<p>De las tres piezas de MVC nos falta por tanto la <strong>vista</strong>. Para ello abriremos el archivo <code>Main.storyboard</code> haciendo clic sobre él. Aparecerá una pantalla en blanco de iPhone. Aquí debemos añadir los componentes gráficos de nuestra aplicación. En la esquina inferior derecha de Xcode podemos seleccionar el componente que necesitemos y &quot;arrastrarlo&quot; hasta la pantalla del <em>storyboard</em>. Podemos filtrar la lista de componentes escribiendo en el cuadro de texto de su parte inferior. Necesitamos:</p>
 
 <ul>
-<li>Un <code>label</code> para el mensaje de &#8220;Formula una pregunta en voz alta&#8230;&#8221;. Un <code>label</code> es un componente que muestra texto que no va a editar el usuario. Puede ser totalmente estático, como en este caso, y también podemos modificar el texto por código, como veremos.</li>
-<li>Un <code>button</code> para el &#8220;Obtener respuesta&#8221;.</li>
+<li>Un <code>label</code> para el mensaje de &quot;Formula una pregunta en voz alta...&quot;. Un <code>label</code> es un componente que muestra texto que no va a editar el usuario. Puede ser totalmente estático, como en este caso, y también podemos modificar el texto por código, como veremos.</li>
+<li>Un <code>button</code> para el &quot;Obtener respuesta&quot;.</li>
 <li>Otro <code>label</code> para la respuesta del adivino. Como vemos esta no es estática sino que la cambiamos a través de nuestro código de programa.</li>
 </ul>
 
@@ -90,45 +497,44 @@ html,body,#wrapper{font-size:10pt!important;}
 <p>La comunicación entre los elementos de la interfaz y nuestro código se produce en las dos direcciones:</p>
 
 <ul>
-<li><code>action</code>: se usan cuando queremos reaccionar a un evento producido sobre la interfaz de usuario. En nuestro caso la única que nos interesa es la pulsación sobre el botón de &#8220;Obtener respuesta&#8221;. Le diremos a Xcode que cuando se produzca el evento llame a determinado método del código del controlador.</li>
-<li><code>outlet</code>: es una variable que representa un elemento de la interfaz de usuario. Leyendo o cambiando sus propiedades podemos cambiar la apariencia o el contenido de este elemento. En nuestro caso nos interesa cambiar el texto de la <code>label</code> con la respuesta.</li>
+<li><code>action</code>: se usan cuando queremos reaccionar a un evento producido sobre la interfaz de usuario. En nuestro caso la única que nos interesa es la pulsación sobre el botón de &quot;Obtener respuesta&quot;. Le diremos a Xcode que cuando se produzca el evento llame a determinado método del código del controlador.</li>
+<li><code>outlet</code>: es una variable que representa un elemento de la interfaz de usuario. Leyendo o cambiando sus propiedades podemos cambiar la apariencia o el contenido de este elemento. En nuestro caso nos interesa cambiar el texto de la <code>label</code> con la respuesta. </li>
 </ul>
 
 <p>Los <code>action</code> y los <code>outlet</code> se crean de la misma forma. Necesitamos ver simultáneamente el <em>storyboard</em> y el código fuente donde queremos crear el <code>action</code> o el <code>outlet</code>. Para ello se usa el <em>assistant editor</em> de Xcode. </p>
 
 <p><strong>Estando editando el <em>storyboard</em> pasamos al <em>assistant editor</em> pulsando sobre el correspondiente botón</strong> de la esquina superior derecha de Xcode</p>
 
-<figure>
-<img src="img_1_y_2/botones_editor.png" alt="" />
-</figure>
+<p><img src="img_1_y_2/botones_editor.png" alt=""></p>
 
 <p>La pantalla se dividirá en dos, para mostrar tanto el <em>storyboard</em> como el código Swift que queremos conectar. </p>
 
-<figure>
-<img src="img_1_y_2/vista_assistant.png" alt="" />
-</figure>
+<p><img src="img_1_y_2/vista_assistant.png" alt=""></p>
 
 <p><strong>Para crear el <code>outlet</code> asociado al <code>label</code> con la respuesta del adivino</strong>, pulsar la tecla <code>Ctrl</code> y arrastrar desde el <code>label</code> en el <em>storyboard</em> hasta un lugar en el código de <code>ViewController.swift</code> donde se pueda insertar una nueva propiedad. En el menú <em>popup</em> que aparecerá al soltar el botón del ratón seleccionar como <code>Connection</code> el tipo <code>outlet</code>, y como <code>name</code> teclear el nombre que queremos que tenga la nueva propiedad, por ejemplo <code>respuestaLabel</code>. En el código fuente aparecerá una nueva propiedad:</p>
-<pre><code class="swift">@IBOutlet weak var respuestaLabel: UILabel!</code></pre>
 
-<p><strong>Para crear el <code>action</code> asociado al botón &#8220;Obtener respuesta&#8221;</strong>, hacer lo mismo que con el <em>outlet</em>: pulsar la tecla <code>Ctrl</code> y arrastrar desde el botón hasta un lugar en el código de <code>ViewController.swift</code> donde se pueda insertar un nuevo método.</p>
+<div><pre><code class="language-swift">@IBOutlet weak var respuestaLabel: UILabel!</code></pre></div>
+
+<p><strong>Para crear el <code>action</code> asociado al botón &quot;Obtener respuesta&quot;</strong>, hacer lo mismo que con el <em>outlet</em>: pulsar la tecla <code>Ctrl</code> y arrastrar desde el botón hasta un lugar en el código de <code>ViewController.swift</code> donde se pueda insertar un nuevo método.</p>
 
 <p>En el menú <em>popup</em> que aparecerá al soltar el botón del ratón seleccionar como <code>Connection</code> el tipo <code>action</code>, y como <code>name</code> teclear el nombre del método que se va a crear en el código, por ejemplo <code>botonPulsado</code>. <strong>Aparecerá el esqueleto del método, que debemos rellenar con el código adecuado</strong>. En este caso algo que obtenga una respuesta del adivino al azar y la copie en el texto del <code>label</code>. En código iOS un <code>label</code> es una instancia de <code>UILabel</code> y su propiedad <code>text</code> representa el texto.</p>
-<pre><code class="swift">self.respuestaLabel.text = obtenerRespuesta()</code></pre>
 
-<p><strong>Comprueba que la aplicación funciona correctamente</strong>. Si es así, haz un <code>commit</code> con la opción de menú <code>Source control &gt; commit...</code>, con el mensaje &#8220;versión 1: sin objetos&#8221;.</p>
+<div><pre><code class="language-swift">self.respuestaLabel.text = obtenerRespuesta()</code></pre></div>
 
-<h2 id="ejercicio2.aplicaciónuadivinoconswiftorientadoaobjetos">Ejercicio 2. Aplicación <code>UAdivino</code> con Swift orientado a objetos</h2>
+<p><strong>Comprueba que la aplicación funciona correctamente</strong>. Si es así, haz un <code>commit</code> con la opción de menú <code>Source control &gt; commit...</code>, con el mensaje &quot;versión 1: sin objetos&quot;.</p>
+
+<h2 id="toc_3">Ejercicio 2. Aplicación <code>UAdivino</code> con Swift orientado a objetos (0.75 puntos)</h2>
 
 <p>Vamos a hacer una nueva versión de la aplicación, con código orientado a objetos. Haremos una clase <code>UAdivino</code>. Para ello ir a la opción de menú de <code>File &gt; New &gt; File...</code> y en el cuadro de diálogo seleccionar <code>Swift File</code>. En el siguiente paso llamarlo <code>UAdivino</code>. Copiar el siguiente código en el fuente:</p>
-<pre><code class="swift">class UAdivino {
+
+<div><pre><code class="language-swift">class UAdivino {
     let respuestas = [&quot;Si&quot;, &quot;No&quot;, &quot;Ni de coña&quot;, &quot;Por supuesto!&quot;];
 
     func obtenerRespuesta() -&gt; String {
         let indice = Int(arc4random_uniform(UInt32(respuestas.count)));
         return respuestas[indice];
     }
-}</code></pre>
+}</code></pre></div>
 
 <p>Básicamente es lo mismo que teníamos antes pero encapsulado en una clase. Las posibles respuestas pasan a ser una propiedad de la clase en lugar de estar definidas en el método. </p>
 
@@ -137,23 +543,25 @@ html,body,#wrapper{font-size:10pt!important;}
 <ul>
 <li><strong>Añadir una propiedad a la clase <code>ViewController</code></strong> que almacene una instancia de <code>UAdivino</code>:</li>
 </ul>
-<pre><code class="swift">var miAdivino = UAdivino()</code></pre>
+
+<div><pre><code class="language-swift">var miAdivino = UAdivino()</code></pre></div>
 
 <ul>
-<li><strong>Escribir el siguiente código en el método <code>botonPulsado</code></strong> (sustituyendo al anterior). Recordemos que este método se dispara automáticamente cuando se pulsa en el botón &#8220;Obtener respuesta&#8221;</li>
+<li><strong>Escribir el siguiente código en el método <code>botonPulsado</code></strong> (sustituyendo al anterior). Recordemos que este método se dispara automáticamente cuando se pulsa en el botón &quot;Obtener respuesta&quot;</li>
 </ul>
-<pre><code class="swift">self.respuestaLabel.text = self.miAdivino.obtenerRespuesta()</code></pre>
 
-<p><strong>Comprueba que la aplicación funciona correctamente</strong>, y si es así haz otro commit con el mensaje &#8220;versión 2: con objetos&#8221;</p>
+<div><pre><code class="language-swift">self.respuestaLabel.text = self.miAdivino.obtenerRespuesta()</code></pre></div>
 
-<h2 id="ejercicio3.ampliacióndeuadivino">Ejercicio 3. Ampliación de <code>UAdivino</code></h2>
+<p><strong>Comprueba que la aplicación funciona correctamente</strong>, y si es así haz otro commit con el mensaje &quot;versión 2: con objetos&quot;</p>
 
-<h3 id="parte1:añadirleunnombrealadivino">Parte 1: Añadirle un nombre al adivino</h3>
+<h2 id="toc_4">Ejercicio 3. Ampliación de <code>UAdivino</code></h2>
 
-<p>Vamos a hacer que el adivino tenga un nombre, que aparecerá en pantalla. Además del &#8220;Formula una pregunta en voz alta&#8230;&#8221; antes aparecerá un &#8220;Hola, soy XXX&#8221;. Haz que este texto aparezca en un <code>label</code> distinto al de &#8220;Formula una pregunta&#8230;&#8221; </p>
+<h3 id="toc_5">Parte 1: Añadirle un nombre al adivino (1 puntos)</h3>
+
+<p>Vamos a hacer que el adivino tenga un nombre, que aparecerá en pantalla. Además del &quot;Formula una pregunta en voz alta...&quot; antes aparecerá un &quot;Hola, soy XXX&quot;. Haz que este texto aparezca en un <code>label</code> distinto al de &quot;Formula una pregunta...&quot; </p>
 
 <blockquote>
-<p>Sí, se podría incluir el nombre del adivino en el &#8220;formula una pregunta&#8230;&#8221;, pero la idea es que así practiquéis añadiendo algo nuevo a la interfaz y luego accediendo a ello con un nuevo <code>outlet</code></p>
+<p>Sí, se podría incluir el nombre del adivino en el &quot;formula una pregunta...&quot;, pero la idea es que así practiquéis añadiendo algo nuevo a la interfaz y luego accediendo a ello con un nuevo <code>outlet</code></p>
 </blockquote>
 
 <p>Tendrás que hacer las siguientes modificaciones/añadidos:</p>
@@ -162,7 +570,7 @@ html,body,#wrapper{font-size:10pt!important;}
 
 <ul>
 <li>Añadir la nueva propiedad <code>nombre</code></li>
-<li>Definir un inicializador que acepte un nombre como parámetro y le dé su valor a la propiedad</li>
+<li>Definir un inicializador que acepte un nombre como parámetro y le dé su  valor a la propiedad</li>
 </ul>
 
 <p>En el <em>storyboard</em></p>
@@ -177,30 +585,29 @@ html,body,#wrapper{font-size:10pt!important;}
 <ul>
 <li>Sustituye la inicialización de <code>miAdivino</code> por una nueva, que le pase el nombre (que estará fijo en el código fuente)</li>
 </ul>
-<pre><code class="swift">var miAdivino = UAdivino(nombre: &quot;Rappel&quot;)  //O como se llame el vuestro...</code></pre>
+
+<div><pre><code class="language-swift">var miAdivino = UAdivino(nombre: &quot;Rappel&quot;)  //O como se llame el vuestro...</code></pre></div>
 
 <ul>
-<li>En el método <code>viewDidLoad()</code> escribe código Swift que actualice el nuevo <code>label</code> con el mensaje &#8220;Hola soy&#8221; y el nombre del adivino.</li>
+<li>En el método <code>viewDidLoad()</code>  escribe código Swift que actualice el nuevo <code>label</code> con el mensaje &quot;Hola soy&quot; y el nombre del adivino.</li>
 </ul>
 
-<p>Una vez compruebes que la aplicación funciona <strong>haz un nuevo commit y pon como comentario &#8220;Ejercicio 1.3.1&#8221;</strong> (o sea, sesión 1, ejercicio 3, apartado 1).</p>
+<p>Una vez compruebes que la aplicación funciona <strong>haz un nuevo commit y pon como comentario &quot;Ejercicio 1.3.1&quot;</strong> (o sea, sesión 1, ejercicio 3, apartado 1).</p>
 
-<h2 id="parte2:distinguirentrerespuestaspositivasnegativas">Parte 2: Distinguir entre respuestas positivas/negativas</h2>
+<h2 id="toc_6">Parte 2: Distinguir entre respuestas positivas/negativas (1.5 puntos)</h2>
 
 <p>Queremos que además de la respuesta en modo texto aparezca una imagen u otra indicando el carácter positivo/negativo de la respuesta.</p>
 
-<figure>
-<img src="img_1_y_2/UAdivino_con_imagen.png" alt="" />
-</figure>
+<p><img src="img_1_y_2/UAdivino_con_imagen.png" alt=""></p>
 
-<p>Al ser la respuesta solo un texto en lenguaje natural de ella no es fácil deducir automáticamente si significa &#8220;Sí&#8221; o &#8220;No&#8221;. Por tanto para cada respuesta además del texto almacenaremos un booleano indicando el tipo.</p>
+<p>Al ser la respuesta  solo un texto en lenguaje natural de ella no es fácil deducir automáticamente si significa &quot;Sí&quot; o &quot;No&quot;. Por tanto para cada respuesta además del texto almacenaremos un booleano indicando el tipo.</p>
 
 <p>Tendrás que hacer las siguientes modificaciones:</p>
 
 <p>En el proyecto Xcode tenemos que añadir las imágenes:</p>
 
 <ul>
-<li>Haz clic en la &#8220;carpeta&#8221; <code>Assets.xcassets</code> del proyecto.</li>
+<li>Haz clic en la &quot;carpeta&quot; <code>Assets.xcassets</code> del proyecto.</li>
 <li>Arrastra las imágenes para el <a href="img_1_y_2/si.png">sí</a> y para el <a href="img_1_y_2/no.png">no</a> a la lista que aparece a la izquierda (por ahora vacía, solo aparece un <code>appIcon</code>)</li>
 <li>Cada imagen tiene un nombre simbólico para poder referenciarlas en el código Swift. Por defecto este nombre es el del archivo de la imagen, sin la extensión.</li>
 </ul>
@@ -209,7 +616,7 @@ html,body,#wrapper{font-size:10pt!important;}
 
 <ul>
 <li>Inserta un elemento de interfaz de usuario de tipo <code>Image View</code></li>
-<li>Crea un <em>outlet</em> que conecte este <code>image view</code> con una propiedad que llamarás <code>imagen</code> en el código fuente de <code>ViewController</code> (recuerda que es en el <em>assistant editor</em> y con <code>Ctrl+arrastrar</code>)</li>
+<li>Crea un <em>outlet</em> que  conecte este <code>image view</code> con una propiedad que llamarás <code>imagen</code> en el código fuente de <code>ViewController</code> (recuerda que es en el <em>assistant editor</em> y con <code>Ctrl+arrastrar</code>)</li>
 </ul>
 
 <p>En el archivo <code>UAdivino.swift</code></p>
@@ -217,20 +624,22 @@ html,body,#wrapper{font-size:10pt!important;}
 <ul>
 <li>Define un <code>struct</code> llamado Respuesta para almacenar el texto y el tipo de respuesta</li>
 </ul>
-<pre><code class="swift">struct Respuesta {
+
+<div><pre><code class="language-swift">struct Respuesta {
     var texto: String
     var tipo: Bool
-}</code></pre>
+}</code></pre></div>
 
 <ul>
 <li>En la clase <code>UAdivino</code>, cambia la definición de la propiedad <code>respuestas</code>, ahora será un array de <em>structs</em> <code>Respuesta</code></li>
 </ul>
-<pre><code class="swift">let respuestas = [
+
+<div><pre><code class="language-swift">let respuestas = [
   Respuesta(texto: &quot;Si&quot;, tipo: true),
   Respuesta(texto: &quot;No&quot;, tipo: false),
   Respuesta(texto: &quot;Ni de coña&quot;, tipo: false),
   Respuesta(texto: &quot;¡Claro que sí!&quot;, tipo: true)
-]</code></pre>
+]</code></pre></div>
 
 <ul>
 <li>Cambia la declaración y el código de la función <code>obtenerRespuesta</code>. Ahora debe devolver un <code>Respuesta</code>, no un <code>String</code></li>
@@ -239,15 +648,30 @@ html,body,#wrapper{font-size:10pt!important;}
 <p>En el ViewController</p>
 
 <ul>
-<li>En el método <code>botonPulsado</code>, que responde a la pulsación sobre el botón &#8220;Obtener Respuesta&#8221;, cambia el código, modificándolo como necesites. Recuerda que ahora <code>obtenerRespuesta</code> devuelve una instancia de <code>Respuesta</code> y no un String. Para cargar la imagen puedes usar un inicializador de <code>UIImage</code> que carga una imagen por nombre:</li>
+<li>En el método <code>botonPulsado</code>, que responde a la pulsación sobre el botón &quot;Obtener Respuesta&quot;, cambia el código, modificándolo como necesites. Recuerda que ahora <code>obtenerRespuesta</code> devuelve una instancia de <code>Respuesta</code> y no un String. Para cargar la imagen puedes usar un inicializador de <code>UIImage</code> que carga una imagen por nombre:</li>
 </ul>
-<pre><code class="swift">//suponiendo que el outlet se llama &quot;imagen&quot;, como decíamos antes
-//La propiedad &quot;image&quot; del objeto UIImage es la imagen en sí
-self.imagen.image = UIImage(named:&quot;si&quot;)</code></pre>
 
-<p>Evidentemente en caso de que el <code>tipo</code> de la respuesta sea <code>true</code> debes cargar la imagen llamada &#8220;si&#8221; pero en caso contrario debes cargar la &#8220;no&#8221;</p>
-<script>(function(factory){if(typeof define==="function"&&define.amd){define("bidi_helpers",[],factory)}else{window.bidi_helpers=factory()}})(function(){var module={};module.Dir={RTL:-1,UNKNOWN:0,LTR:1};module.Format={LRE:"\u202A",RLE:"\u202B",PDF:"\u202C",LRM:"\u200E",RLM:"\u200F"};module.ltrChars_="A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02B8\u0300-\u0590\u0800-\u1FFF\u2C00-\uFB1C\uFE00-\uFE6F\uFEFD-\uFFFF";module.rtlChars_="\u0591-\u07FF\uFB1D-\uFDFF\uFE70-\uFEFC";module.ltrDirCheckRe_=new RegExp("^[^"+module.rtlChars_+"]*["+module.ltrChars_+"]");module.ltrCharReg_=new RegExp("["+module.ltrChars_+"]");module.hasAnyLtr=function(text){return module.ltrCharReg_.test(text)};module.rtlDirCheckRe_=new RegExp("^[^"+module.ltrChars_+"]*["+module.rtlChars_+"]");module.rtlRe=module.rtlDirCheckRe_;module.isRtlText=function(text){return module.rtlDirCheckRe_.test(text)};module.isLtrText=function(text){return module.ltrDirCheckRe_.test(text)};module.isRequiredLtrRe_=/^http:\/\/.*/;module.hasNumeralsRe_=/\d/;module.estimateDirection=function(text,detectionThreshold){var rtlCount=0;var totalCount=0;var hasWeaklyLtr=false;var tokens=text.split(/\s+/);for(var i=0;i<tokens.length;i++){var token=tokens[i];if(module.isRtlText(token)){rtlCount++;totalCount++}else{if(module.isRequiredLtrRe_.test(token)){hasWeaklyLtr=true}else{if(module.hasAnyLtr(token)){totalCount++}else{if(module.hasNumeralsRe_.test(token)){hasWeaklyLtr=true}}}}}return totalCount==0?(hasWeaklyLtr?module.Dir.LTR:module.Dir.UNKNOWN):(rtlCount/totalCount>detectionThreshold?module.Dir.RTL:module.Dir.LTR)};return module});(function(factory){if(typeof define==="function"&&define.amd){define("bidiweb",["bidi_helpers"],factory)}else{window.bidiweb=factory(bidi_helpers)}})(function(bidi_helpers){var module={};var IProcessor={makeRtl:function(element){},makeLtr:function(element){}};var css_processor=function(classes){return{makeRtl:function(element){element.classList.add(classes.rtl)},makeLtr:function(element){element.classList.add(classes.ltr)}}};var style_processor=function(falign){return{makeRtl:function(element){element.style.direction="rtl";if(falign){element.style.textAlign="right"}},makeLtr:function(element){element.style.direction="ltr";if(falign){element.style.textAlign="left"}}}};module.processors={css:css_processor,style:style_processor};var nodeListMock=function(node){var list=[node];list.item=function(i){return list[i]};return list};module.process=function(query,processor){var elements;if(query instanceof NodeList){elements=query}else{if(query instanceof Node){elements=nodeListMock(query)}else{elements=document.querySelectorAll(query)}}module.process_elements(elements,processor);return elements};module.process_elements=function(elements,processor){for(var index=0;index<elements.length;index++){var element=elements.item(index);var text=element.textContent||element.value||element.placeholder||"";var dir=bidi_helpers.estimateDirection(text,0.4);if(dir==bidi_helpers.Dir.RTL){processor.makeRtl(element)}else{if(dir==bidi_helpers.Dir.LTR){processor.makeLtr(element)}}}};module.process_css=function(query,classes){var proc=module.processors.css(classes);return module.process(query,proc)};module.process_style=function(query,falign){var proc=module.processors.style(falign);return module.process(query,proc)};module.style=function(query){return module.process_style(query,true)};module.css=function(query){return module.process_css(query,{rtl:"rtl",ltr:"ltr"})};module.htmlToElement=function(html){var container=document.createElement("div");container.innerHTML=html;return container};module.html_css=function(html){var container=module.htmlToElement(html);var nodes=container.querySelectorAll("*");module.css(nodes);return container.innerHTML};module.html_style=function(html){var container=module.htmlToElement(html);var nodes=container.querySelectorAll("*");module.style(nodes);return container.innerHTML};return module});</script>
-<!-- ##END MARKED WRAPPER## -->
-    </div>
+<div><pre><code class="language-swift">//suponiendo que el outlet se llama &quot;imagen&quot;, como decíamos antes
+//La propiedad &quot;image&quot; del objeto UIImage es la imagen en sí
+self.imagen.image = UIImage(named:&quot;si&quot;)</code></pre></div>
+
+<p>Evidentemente en caso de que el <code>tipo</code> de la respuesta sea <code>true</code> debes cargar la imagen llamada &quot;si&quot; pero en caso contrario debes cargar la &quot;no&quot;</p>
+
+
+
+<script type="text/javascript">
+var _self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{},Prism=function(){var e=/\blang(?:uage)?-(\w+)\b/i,t=0,n=_self.Prism={util:{encode:function(e){return e instanceof a?new a(e.type,n.util.encode(e.content),e.alias):"Array"===n.util.type(e)?e.map(n.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1]},objId:function(e){return e.__id||Object.defineProperty(e,"__id",{value:++t}),e.__id},clone:function(e){var t=n.util.type(e);switch(t){case"Object":var a={};for(var r in e)e.hasOwnProperty(r)&&(a[r]=n.util.clone(e[r]));return a;case"Array":return e.map&&e.map(function(e){return n.util.clone(e)})}return e}},languages:{extend:function(e,t){var a=n.util.clone(n.languages[e]);for(var r in t)a[r]=t[r];return a},insertBefore:function(e,t,a,r){r=r||n.languages;var l=r[e];if(2==arguments.length){a=arguments[1];for(var i in a)a.hasOwnProperty(i)&&(l[i]=a[i]);return l}var o={};for(var s in l)if(l.hasOwnProperty(s)){if(s==t)for(var i in a)a.hasOwnProperty(i)&&(o[i]=a[i]);o[s]=l[s]}return n.languages.DFS(n.languages,function(t,n){n===r[e]&&t!=e&&(this[t]=o)}),r[e]=o},DFS:function(e,t,a,r){r=r||{};for(var l in e)e.hasOwnProperty(l)&&(t.call(e,l,e[l],a||l),"Object"!==n.util.type(e[l])||r[n.util.objId(e[l])]?"Array"!==n.util.type(e[l])||r[n.util.objId(e[l])]||(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,l,r)):(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,null,r)))}},plugins:{},highlightAll:function(e,t){var a={callback:t,selector:'code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'};n.hooks.run("before-highlightall",a);for(var r,l=a.elements||document.querySelectorAll(a.selector),i=0;r=l[i++];)n.highlightElement(r,e===!0,a.callback)},highlightElement:function(t,a,r){for(var l,i,o=t;o&&!e.test(o.className);)o=o.parentNode;o&&(l=(o.className.match(e)||[,""])[1],i=n.languages[l]),t.className=t.className.replace(e,"").replace(/\s+/g," ")+" language-"+l,o=t.parentNode,/pre/i.test(o.nodeName)&&(o.className=o.className.replace(e,"").replace(/\s+/g," ")+" language-"+l);var s=t.textContent,u={element:t,language:l,grammar:i,code:s};if(!s||!i)return n.hooks.run("complete",u),void 0;if(n.hooks.run("before-highlight",u),a&&_self.Worker){var c=new Worker(n.filename);c.onmessage=function(e){u.highlightedCode=e.data,n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(u.element),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},c.postMessage(JSON.stringify({language:u.language,code:u.code,immediateClose:!0}))}else u.highlightedCode=n.highlight(u.code,u.grammar,u.language),n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(t),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},highlight:function(e,t,r){var l=n.tokenize(e,t);return a.stringify(n.util.encode(l),r)},tokenize:function(e,t){var a=n.Token,r=[e],l=t.rest;if(l){for(var i in l)t[i]=l[i];delete t.rest}e:for(var i in t)if(t.hasOwnProperty(i)&&t[i]){var o=t[i];o="Array"===n.util.type(o)?o:[o];for(var s=0;s<o.length;++s){var u=o[s],c=u.inside,g=!!u.lookbehind,h=!!u.greedy,f=0,d=u.alias;u=u.pattern||u;for(var p=0;p<r.length;p++){var m=r[p];if(r.length>e.length)break e;if(!(m instanceof a)){u.lastIndex=0;var y=u.exec(m),v=1;if(!y&&h&&p!=r.length-1){var b=r[p+1].matchedStr||r[p+1],k=m+b;if(p<r.length-2&&(k+=r[p+2].matchedStr||r[p+2]),u.lastIndex=0,y=u.exec(k),!y)continue;var w=y.index+(g?y[1].length:0);if(w>=m.length)continue;var _=y.index+y[0].length,P=m.length+b.length;if(v=3,P>=_){if(r[p+1].greedy)continue;v=2,k=k.slice(0,P)}m=k}if(y){g&&(f=y[1].length);var w=y.index+f,y=y[0].slice(f),_=w+y.length,S=m.slice(0,w),O=m.slice(_),j=[p,v];S&&j.push(S);var A=new a(i,c?n.tokenize(y,c):y,d,y,h);j.push(A),O&&j.push(O),Array.prototype.splice.apply(r,j)}}}}}return r},hooks:{all:{},add:function(e,t){var a=n.hooks.all;a[e]=a[e]||[],a[e].push(t)},run:function(e,t){var a=n.hooks.all[e];if(a&&a.length)for(var r,l=0;r=a[l++];)r(t)}}},a=n.Token=function(e,t,n,a,r){this.type=e,this.content=t,this.alias=n,this.matchedStr=a||null,this.greedy=!!r};if(a.stringify=function(e,t,r){if("string"==typeof e)return e;if("Array"===n.util.type(e))return e.map(function(n){return a.stringify(n,t,e)}).join("");var l={type:e.type,content:a.stringify(e.content,t,r),tag:"span",classes:["token",e.type],attributes:{},language:t,parent:r};if("comment"==l.type&&(l.attributes.spellcheck="true"),e.alias){var i="Array"===n.util.type(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(l.classes,i)}n.hooks.run("wrap",l);var o="";for(var s in l.attributes)o+=(o?" ":"")+s+'="'+(l.attributes[s]||"")+'"';return"<"+l.tag+' class="'+l.classes.join(" ")+'" '+o+">"+l.content+"</"+l.tag+">"},!_self.document)return _self.addEventListener?(_self.addEventListener("message",function(e){var t=JSON.parse(e.data),a=t.language,r=t.code,l=t.immediateClose;_self.postMessage(n.highlight(r,n.languages[a],a)),l&&_self.close()},!1),_self.Prism):_self.Prism;var r=document.currentScript||[].slice.call(document.getElementsByTagName("script")).pop();return r&&(n.filename=r.src,document.addEventListener&&!r.hasAttribute("data-manual")&&document.addEventListener("DOMContentLoaded",n.highlightAll)),_self.Prism}();"undefined"!=typeof module&&module.exports&&(module.exports=Prism),"undefined"!=typeof global&&(global.Prism=Prism);
+</script>
+
+<script type="text/javascript">
+Prism.languages.clike={comment:[{pattern:/(^|[^\\])\/\*[\w\W]*?\*\//,lookbehind:!0},{pattern:/(^|[^\\:])\/\/.*/,lookbehind:!0}],string:{pattern:/(["'])(\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,greedy:!0},"class-name":{pattern:/((?:\b(?:class|interface|extends|implements|trait|instanceof|new)\s+)|(?:catch\s+\())[a-z0-9_\.\\]+/i,lookbehind:!0,inside:{punctuation:/(\.|\\)/}},keyword:/\b(if|else|while|do|for|return|in|instanceof|function|new|try|throw|catch|finally|null|break|continue)\b/,"boolean":/\b(true|false)\b/,"function":/[a-z0-9_]+(?=\()/i,number:/\b-?(?:0x[\da-f]+|\d*\.?\d+(?:e[+-]?\d+)?)\b/i,operator:/--?|\+\+?|!=?=?|<=?|>=?|==?=?|&&?|\|\|?|\?|\*|\/|~|\^|%/,punctuation:/[{}[\];(),.:]/};
+</script>
+
+<script type="text/javascript">
+Prism.languages.swift=Prism.languages.extend("clike",{string:{pattern:/("|')(\\(?:\((?:[^()]|\([^)]+\))+\)|\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,inside:{interpolation:{pattern:/\\\((?:[^()]|\([^)]+\))+\)/,inside:{delimiter:{pattern:/^\\\(|\)$/,alias:"variable"}}}}},keyword:/\b(as|associativity|break|case|catch|class|continue|convenience|default|defer|deinit|didSet|do|dynamic(?:Type)?|else|enum|extension|fallthrough|final|for|func|get|guard|if|import|in|infix|init|inout|internal|is|lazy|left|let|mutating|new|none|nonmutating|operator|optional|override|postfix|precedence|prefix|private|Protocol|public|repeat|required|rethrows|return|right|safe|self|Self|set|static|struct|subscript|super|switch|throws?|try|Type|typealias|unowned|unsafe|var|weak|where|while|willSet|__(?:COLUMN__|FILE__|FUNCTION__|LINE__))\b/,number:/\b([\d_]+(\.[\de_]+)?|0x[a-f0-9_]+(\.[a-f0-9p_]+)?|0b[01_]+|0o[0-7_]+)\b/i,constant:/\b(nil|[A-Z_]{2,}|k[A-Z][A-Za-z_]+)\b/,atrule:/@\b(IB(?:Outlet|Designable|Action|Inspectable)|class_protocol|exported|noreturn|NS(?:Copying|Managed)|objc|UIApplicationMain|auto_closure)\b/,builtin:/\b([A-Z]\S+|abs|advance|alignof(?:Value)?|assert|contains|count(?:Elements)?|debugPrint(?:ln)?|distance|drop(?:First|Last)|dump|enumerate|equal|filter|find|first|getVaList|indices|isEmpty|join|last|lexicographicalCompare|map|max(?:Element)?|min(?:Element)?|numericCast|overlaps|partition|print(?:ln)?|reduce|reflect|reverse|sizeof(?:Value)?|sort(?:ed)?|split|startsWith|stride(?:of(?:Value)?)?|suffix|swap|toDebugString|toString|transcode|underestimateCount|unsafeBitCast|with(?:ExtendedLifetime|Unsafe(?:MutablePointers?|Pointers?)|VaList))\b/}),Prism.languages.swift.string.inside.interpolation.inside.rest=Prism.util.clone(Prism.languages.swift);
+</script>
+
+
 </body>
+
 </html>

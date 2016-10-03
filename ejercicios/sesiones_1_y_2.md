@@ -10,7 +10,7 @@ Vamos a hacer un par de versiones según vayamos viendo características de Swif
 
 > Las dos primeras versiones de la aplicación serán desarrolladas de forma guiada, se dejará el código en la web por si lo necesitáis. A partir de ahí tendréis que añadir una nueva funcionalidad e internacionalizar la aplicación.
 
-## Ejercicio 1. Aplicación `UAdivino` con Swift sin orientación a objetos
+## Ejercicio 1. Aplicación `UAdivino` con Swift sin orientación a objetos (0.75 puntos)
 
 Necesitamos alguna clase donde poder colocar nuestro código. Vamos a hacerlo en el `ViewController`, que en el MVC de iOS es el **controlador***, el pegamento entre vista y modelo.
 
@@ -70,7 +70,7 @@ self.respuestaLabel.text = obtenerRespuesta()
 **Comprueba que la aplicación funciona correctamente**. Si es así, haz un `commit` con la opción de menú `Source control > commit... `, con el mensaje "versión 1: sin objetos".
 
 
-## Ejercicio 2. Aplicación `UAdivino` con Swift orientado a objetos
+## Ejercicio 2. Aplicación `UAdivino` con Swift orientado a objetos (0.75 puntos)
 
 Vamos a hacer una nueva versión de la aplicación, con código orientado a objetos. Haremos una clase `UAdivino`. Para ello ir a la opción de menú de `File > New > File...` y en el cuadro de diálogo seleccionar `Swift File`. En el siguiente paso llamarlo `UAdivino`. Copiar el siguiente código en el fuente:
 
@@ -105,7 +105,7 @@ self.respuestaLabel.text = self.miAdivino.obtenerRespuesta()
 
 ## Ejercicio 3. Ampliación de `UAdivino`
 
-### Parte 1: Añadirle un nombre al adivino
+### Parte 1: Añadirle un nombre al adivino (1 puntos)
 
 Vamos a hacer que el adivino tenga un nombre, que aparecerá en pantalla. Además del "Formula una pregunta en voz alta..." antes aparecerá un "Hola, soy XXX". Haz que este texto aparezca en un `label` distinto al de "Formula una pregunta..." 
 
@@ -135,7 +135,7 @@ var miAdivino = UAdivino(nombre: "Rappel")  //O como se llame el vuestro...
 
 Una vez compruebes que la aplicación funciona **haz un nuevo commit y pon como comentario "Ejercicio 1.3.1"** (o sea, sesión 1, ejercicio 3, apartado 1).
 
-## Parte 2: Distinguir entre respuestas positivas/negativas
+## Parte 2: Distinguir entre respuestas positivas/negativas (1.5 puntos)
 
 Queremos que además de la respuesta en modo texto aparezca una imagen u otra indicando el carácter positivo/negativo de la respuesta.
 
