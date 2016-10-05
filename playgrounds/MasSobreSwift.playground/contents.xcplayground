@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' display-mode='rendered'>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
+        <page name='Titulo'/>
         <page name='1. Clausuras y concurrencia'/>
         <page name='Clausuras'/>
         <page name='Sin clausuras'/>
@@ -18,5 +19,12 @@
         <page name='superclase y protocolos'/>
         <page name='patron delegacion'/>
         <page name='como usar delegacion'/>
+        <page name='3.Errores'/>
+        <page name='errores en Swift'/>
+        <page name='gestionar errores'/>
+        <page name='propagar el error'/>
+        <page name='capturar el error'/>
+        <page name='error como opcional'/>
+        <page name='todo va a ir bien'/>
     </pages>
 </playground>

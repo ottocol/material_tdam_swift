@@ -5,10 +5,9 @@ import UIKit
 
 let vc = UIViewController()
 let centro = vc.view.center;
-vc.view.add
 //Nótese que la animación se ejecuta con un retardo de 10 segundos
 //Mucho antes la cte "centro" se debería haber salido del ámbito
-UIView.animate(WithDuration:2.0,
+UIView.animate(withDuration:2.0,
                animations:{
                  vc.view.myLabel.center = centro;
                },

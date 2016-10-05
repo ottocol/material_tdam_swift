@@ -1,7 +1,4 @@
-//: [Previous](@previous)
 
-import Foundation
-
-var str = "Hello, playground"
-
-//: [Next](@next)
+//: # TDADM. Sesión 3, bloque iOS
+//: # Más sobre Swift
+//: [➡️](@next)

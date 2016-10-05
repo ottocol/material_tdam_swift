@@ -1,2 +1,2 @@
-//:[⬅️](@previous) [➡️](@next)
 //: # 2. Protocolos y delegación
+//:[⬅️](@previous) [➡️](@next)

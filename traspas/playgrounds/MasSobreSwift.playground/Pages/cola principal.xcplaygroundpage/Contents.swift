@@ -1,7 +1,7 @@
 //:[⬅️](@previous) [➡️](@next)
-//:## El Interfaz de Usuario y las colas
-//:- El **código que actualice el UI** debería ejecutarse en el *thread* principal, ya que es donde se procesan los eventos y donde trabajan los *frameworks* UI del sistema
-//:- La cola de operaciones "principal" (`OperationQueue.main()`) siempre se ejecuta en el *thread* principal
+//: ## El Interfaz de Usuario y las colas
+//: - El **código que actualice el UI** debería ejecutarse en el *thread* principal, ya que es donde se procesan los eventos y donde trabajan los *frameworks* UI del sistema
+//: - La cola de operaciones "principal" (`OperationQueue.main()`) siempre se ejecuta en el *thread* principal
 import Foundation
 import XCPlayground
 //solo para que el ejemplo funcione en playground
@@ -13,7 +13,7 @@ background.addOperation() {
     sleep(4)
     print("...terminado!")
     print("pero yo no puedo tocar la interfaz")
-    OperationQueue.main().addOperation() {
+    OperationQueue.main.addOperation() {
         print("Soy main. Desde aquí se puede actualizar la interfaz")
     }
 }

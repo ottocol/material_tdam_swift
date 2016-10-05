@@ -6,5 +6,5 @@ func ascendente(a:String, b:String)->Bool {
 }
 
 let nombres = ["James","Billy","D'Arcy","Jimmy"]
-let ord = nombres.sorted(isOrderedBefore:ascendente)
+let ord = nombres.sorted(by:ascendente)
 //:

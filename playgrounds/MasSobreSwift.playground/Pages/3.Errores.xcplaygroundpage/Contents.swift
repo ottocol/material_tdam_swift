@@ -1,7 +1,3 @@
-//: [Previous](@previous)
-
-import Foundation
-
-var str = "Hello, playground"
-
-//: [Next](@next)
+//: # 3. Tratamiento de errores
+//:[⬅️](@previous) [➡️](@next)
+//: 

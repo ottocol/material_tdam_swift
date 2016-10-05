@@ -1,6 +1,6 @@
 //:[⬅️](@previous) [➡️](@next)
-//:## Colas de operaciones
-//:Abstracción para *multithreading* sin tener que asignar explícitamente los *threads*
+//: ## Colas de operaciones
+//: Abstracción para *multithreading* sin tener que asignar explícitamente los *threads*
 import Foundation
 import XCPlayground
 

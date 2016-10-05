@@ -1,5 +1,5 @@
 //:[⬅️](@previous) [➡️](@next)
-//:## Definir y utilizar un protocolo
+//: ## Definir y usar un protocolo
 
 protocol ProtocoloEjemplo {
     //Debemos decir si la propiedad es gettable y/o settable
